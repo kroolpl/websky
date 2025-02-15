@@ -1,10 +1,17 @@
 ---
 import { Image } from 'astro:assets';
+<<<<<<< HEAD
 import logo from '../assets/images/logo.png';
 
 const navItems = [
   { name: 'Strona Główna', href: '/' },
   { name: 'O Nas', href: '/o-nas' },
+=======
+import logo from '../assets/images/logo.svg';
+
+const navItems = [
+  { name: 'Strona Główna', href: '/' },
+>>>>>>> origin/master
   { name: 'Usługi', href: '/uslugi' },
   { name: 'Portfolio', href: '/portfolio' },
   { name: 'Kontakt', href: '/kontakt' },
@@ -24,14 +31,22 @@ const navItems = [
     <div class="flex items-center justify-between">
       <a 
         href="/" 
+<<<<<<< HEAD
         class="logo-animation group"
+=======
+        class="hover:scale-105 transition-transform"
+>>>>>>> origin/master
       >
         <Image 
           src={logo}
           alt="WebDesign UK Logo"
           width={180}
           height={40}
+<<<<<<< HEAD
           class="h-9 w-auto transition-all duration-300 group-hover:brightness-110 group-hover:filter-shadow"
+=======
+          class="h-9 w-auto"
+>>>>>>> origin/master
         />
       </a>
       
@@ -95,6 +110,7 @@ const navItems = [
       </div>
     </div>
   </nav>
+<<<<<<< HEAD
 </header>
 
 <style>
@@ -117,3 +133,6 @@ const navItems = [
     filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.2));
   }
 </style>
+=======
+</header>
+>>>>>>> origin/master

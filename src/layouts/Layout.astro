@@ -1,10 +1,14 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+<<<<<<< HEAD
 import favicon from '../assets/images/fav.png';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import '@fontsource/inter/600.css';
 import '@fontsource/inter/700.css';
+=======
+import favicon from '../assets/images/fav.svg';
+>>>>>>> origin/master
 
 interface Props {
   title: string;
@@ -22,7 +26,11 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
+<<<<<<< HEAD
     <link rel="icon" type="image/png" href={favicon.src} />
+=======
+    <link rel="icon" type="image/svg+xml" href={favicon.src} />
+>>>>>>> origin/master
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
@@ -42,6 +50,17 @@ const { title, description } = Astro.props;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     
+<<<<<<< HEAD
+=======
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Add preload for critical assets -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" />
+
+>>>>>>> origin/master
     <!-- Add meta tags for better SEO -->
     <meta name="keywords" content="web design, UK, Polish, business websites, SEO" />
     <meta name="author" content="WebDesign UK" />
@@ -49,6 +68,7 @@ const { title, description } = Astro.props;
 
     <!-- Add canonical URL -->
     <link rel="canonical" href={Astro.url} />
+<<<<<<< HEAD
 
     <!-- Add preload for critical CSS -->
     <link rel="preload" as="style" href="/styles/critical.css" />
@@ -63,6 +83,8 @@ const { title, description } = Astro.props;
         "url": {Astro.url}
       }
     </script>
+=======
+>>>>>>> origin/master
   </head>
   <body class="bg-gradient-to-br from-gray-50 to-blue-50/30">
     <div class="flex flex-col min-h-screen">

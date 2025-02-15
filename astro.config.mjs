@@ -7,6 +7,7 @@ export default defineConfig({
   integrations: [tailwind(), alpinejs(), react()],
   site: 'https://your-domain.com',
   compressHTML: true,
+<<<<<<< HEAD
   build: {
     inlineStylesheets: 'auto',
   },
@@ -25,4 +26,6 @@ export default defineConfig({
     service: { entrypoint: 'astro/assets/services/sharp' },
     remotePatterns: [{ protocol: "https" }]
   }
+=======
+>>>>>>> origin/master
 });

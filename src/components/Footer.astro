@@ -1,6 +1,10 @@
 ---
 import { Image } from 'astro:assets';
+<<<<<<< HEAD
 import logo from '../assets/images/logo.png';
+=======
+import logo from '../assets/images/logo.svg';
+>>>>>>> origin/master
 const currentYear = new Date().getFullYear();
 ---
 
@@ -12,6 +16,7 @@ const currentYear = new Date().getFullYear();
     <div class="grid md:grid-cols-4 gap-8 mb-8">
       <div class="space-y-4 reveal">
         <div class="mb-4">
+<<<<<<< HEAD
           <a 
             href="/"
             class="logo-animation-footer-continuous group inline-block"
@@ -24,6 +29,15 @@ const currentYear = new Date().getFullYear();
               class="h-10 w-auto brightness-0 invert transition-all duration-300"
             />
           </a>
+=======
+          <Image 
+            src={logo}
+            alt="WebDesign UK Logo"
+            width={180}
+            height={40}
+            class="h-10 w-auto brightness-0 invert"
+          />
+>>>>>>> origin/master
         </div>
         <p class="text-gray-400">Tworzymy profesjonalne strony internetowe dla polskich firm w Wielkiej Brytanii.</p>
         <div class="flex space-x-4">
@@ -94,6 +108,7 @@ const currentYear = new Date().getFullYear();
       </div>
     </div>
   </div>
+<<<<<<< HEAD
 </footer>
 
 <style>
@@ -107,3 +122,6 @@ const currentYear = new Date().getFullYear();
   animation: logo-float-footer 3s ease-in-out infinite;
 }
 </style> 
+=======
+</footer> 
+>>>>>>> origin/master
